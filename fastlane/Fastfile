@@ -1,0 +1,46 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :custom_lane do
+	gym(
+          clean: true,
+          output_directory: './fastlane/build',
+          output_name:"XX.ipa",
+          scheme: 'XXX',
+          configuration: 'Debug',###########
+          # sdk:"iOS 12.0",
+          # archive_path:"./fastlane/Archive",
+          include_symbols:true,
+          export_options: {
+            method: 'development',#测试包
+            provisioningProfiles: {
+                "com.xxxx.xxx" => "20210906_dev" #测试打包描述文件
+            },
+          }
+    )
+    
+    updateVersionDes = "提到蒲公英的版本更新信息;"
+    pgyer(
+        api_key: "蒲公英API Key", 
+        user_key: "蒲公英user_key"
+        update_description: updateVersionDes
+    )
+    # add actions here: https://docs.fastlane.tools/actions
+  end
+end
