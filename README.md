@@ -3,12 +3,3 @@
 
  
 工作之余随便写写
-
-
-![aaa](https://github.com/TradingGod/Trading-iOS/blob/main/Screenshots/WechatIMG12.png?raw=true)
- 
-
-![bbb](https://github.com/TradingGod/Trading-iOS/blob/main/Screenshots/WechatIMG92.png?raw=true)
-
-
-![ccc](https://github.com/TradingGod/Trading-iOS/blob/main/Screenshots/WechatIMG93.png?raw=true)
