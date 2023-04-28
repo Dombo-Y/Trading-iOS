@@ -8,3 +8,5 @@
 ![aaa](https://github.com/Dombo-Y/Trading-iOS/blob/main/WechatIMG129.png?raw=true)
 
 ![bbb](https://github.com/Dombo-Y/Trading-iOS/blob/main/WechatIMG130.png?raw=true)
+
+![ccc](https://github.com/Dombo-Y/Trading-iOS/blob/main/WechatIMG132.jpeg?raw=true)
